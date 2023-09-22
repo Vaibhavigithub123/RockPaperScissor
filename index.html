@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="game">
+        <div class="header">
+            <div class="title">
+            <p>ROCK</p>
+            <p>PAPER</p>
+            <p>SCISSORS</p>
+             </div>
+
+
+            <div class="scores">
+              <div class="score1">
+                <p>COMPUTER <br> SCORE</p>
+                <h1>0</h1>
+              </div>
+
+              <div class="score2">
+                <p>YOUR <br>SCORE</p>
+                <h1>0</h1>
+              </div>
+
+
+            </div>
+        </div>
+
+
+      
+
+          <div class="game1">
+          <div class="play_areas">
+          
+            <div class="play_area pulse rock" onclick="pickuserhand('rock')" >
+              <img src="images/rock.png" alt="rock" >
+              
+              
+              
+            </div>
+            
+  
+            <div class="play_area scissor" onclick="pickuserhand('scissor')" >
+              <img src="images/scissor.png" alt="scissor" >
+            </div>
+            
+  
+            <div class="play_area paper" onclick="pickuserhand('paper')" >
+              <img src="images/paper.png" alt="paper">
+            </div>
+             
+  
+          </div>
+          </div>
+
+          <div class="contest">
+            <div class="userchoice">
+              <p>YOU PICKED</p>
+              <div class="userchoiceimg">
+                <img  id="userPickImage" src="images/rock.png">
+              </div>
+            </div>
+
+            <div class="results">
+              <h1 id="result1">YOU LOST</h1>
+              <h2 class="result2">AGAINST PC</h2>
+              <div class="nextgame">PLAY AGAIN</div>
+              <div class="replay" >REPLAY</div>
+
+            </div>
+
+            <div class="computerchoice">
+              <p>PC PICKED</p>
+              <div class="computerchoiceimg">
+                <img id="computerPickImage" src="images/scissor.png">
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+          </div>
+
+
+          <div class="buttons">
+            
+            <button class="rule-btn">RULES</button>
+            <button class="next-btn" style="display: none;">NEXT</button>
+            
+
+          </div>
+          
+          <div class="rules" id="rule">
+            <div class="rules-inner">
+              <h3>Game Rules</h3>
+              <button class="close-btn">
+                <img src="images/X.png" />
+              </button>
+              <ul>
+                <li>
+                  Rock beats scissors, scissors beat paper, and paper beats rock.
+                </li>
+                <li>
+                  Agree ahead of time whether you’ll count off “rock, paper,
+                  scissors, shoot” or just “rock, paper, scissors.”
+                </li>
+                <li>
+                  Use rock, paper, scissors to settle minor decisions or simply play
+                  to pass the time
+                </li>
+                <li>
+                  If both players lay down the same hand, each player lays down
+                  another hand
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+    
+
+        <section class="won-game" >
+          <div class="stars">
+            <img src="images/hurray.png">
+          </div>
+          <h2 class="won-game-heading">HURRAY</h2>
+          <h6 class="won-game-sub-heading">YOU WON THE GAME</h6>
+          <div class="nextgamehurraypage">PLAY AGAIN</div>
+      
+          <div class="buttons">
+            <button class="rule-btn2">RULES</button>
+          </div>
+          
+          </section>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
